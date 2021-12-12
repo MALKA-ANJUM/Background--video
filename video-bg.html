@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background | Animated</title>
+    <link rel="stylesheet" href="video-bg.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <div class="rightside">
+            <div class="btns dayNight">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+            </div>
+
+            <div class="btns menuToggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <video src="Nature.mp4" autoplay loop muted type="mp4"></video>
+        <img src="mask.jpg" alt="">
+        <h2>Nature</h2>
+        <p class="copyright">&nbsp;2021 Malka Anjum</p>
+        <ul class="social_link">
+            <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+        </ul>
+    </section>
+
+
+
+    <!-- Sidebar Navigation -->
+
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Package</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+
+
+    <script>
+        let dayNight = document.querySelector('.dayNight')
+        let menuToggle = document.querySelector('.menuToggle')
+        let body = document.querySelector('.body')
+        let navigation = document.querySelector('.navigation')
+
+
+        dayNight.onclick = function(){
+            body.classList.toggle('dark')
+            dayNight.classList.toggle('active')
+        }
+
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
